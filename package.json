@@ -1,0 +1,14 @@
+{
+    "name": "filepond-polyfill",
+    "version": "1.0.0",
+    "description": "Polyfill for FilePond",
+    "homepage": "https://pqina.nl/filepond",
+    "main": "dist/filepond-polyfill.js",
+    "browser": "dist/filepond-polyfill.js",
+    "module": "dist/filepond-polyfill.js",
+    "license": "MIT",
+    "author": {
+        "name": "PQINA",
+        "url": "https://pqina.nl"
+    }
+}
