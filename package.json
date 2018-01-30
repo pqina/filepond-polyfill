@@ -1,6 +1,6 @@
 {
     "name": "filepond-polyfill",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Polyfill for FilePond",
     "homepage": "https://pqina.nl/filepond",
     "main": "dist/filepond-polyfill.js",
