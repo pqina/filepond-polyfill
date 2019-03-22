@@ -1,8 +1,11 @@
-/*
- * FilePondPolyfill 1.0.2
- * Licensed under MIT, https://opensource.org/licenses/MIT
- * Please visit https://pqina.nl/filepond for details.
+/*!
+ * FilePondPluginImageValidateSize 1.0.3
+ * Licensed under MIT, https://opensource.org/licenses/MIT/
+ * Please visit https://pqina.nl/filepond/ for details.
  */
+
+/* eslint-disable */
+
 // https://tc39.github.io/ecma262/#sec-array.prototype.find
 if (!Array.prototype.find) {
   Object.defineProperty(Array.prototype, 'find', {
@@ -244,8 +247,6 @@ if (!Array.prototype.includes) {
 // Reference: http://es5.github.io/#x15.4.4.17
 if (!Array.prototype.some) {
   Array.prototype.some = function(fun /*, thisArg*/) {
-    'use strict';
-
     if (this == null) {
       throw new TypeError('Array.prototype.some called on null or undefined');
     }
@@ -270,8 +271,6 @@ if (!Array.prototype.some) {
 
 if (!Array.prototype.every) {
   Array.prototype.every = function(callbackfn, thisArg) {
-    'use strict';
-
     var T, k;
 
     if (this == null) {
@@ -335,9 +334,6 @@ if (typeof Object.assign != 'function') {
   // Must be writable: true, enumerable: false, configurable: true
   Object.defineProperty(Object, 'assign', {
     value: function assign(target, varArgs) {
-      // .length of function is 2
-      'use strict';
-
       if (target == null) {
         // TypeError if undefined or null
         throw new TypeError('Cannot convert undefined or null to object');
