@@ -1,5 +1,5 @@
 /*!
- * FilePondPluginImageValidateSize 1.0.3
+ * FilePondPluginImageValidateSize 1.0.4
  * Licensed under MIT, https://opensource.org/licenses/MIT/
  * Please visit https://pqina.nl/filepond/ for details.
  */
@@ -363,7 +363,8 @@ if (typeof Object.assign != 'function') {
 
 // https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent
 (function() {
-  if (typeof window.CustomEvent === 'function') return false;
+  if (typeof window === 'undefined' || typeof window.CustomEvent === 'function')
+    return false;
 
   function CustomEvent(event, params) {
     params = params || {

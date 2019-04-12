@@ -1,6 +1,6 @@
 {
     "name": "filepond-polyfill",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Polyfill for FilePond",
     "license": "MIT",
     "author": {
